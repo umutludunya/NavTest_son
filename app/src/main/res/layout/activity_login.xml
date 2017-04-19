@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.onal.navtest.LoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:id="@+id/loginEmail"
+        android:hint="Email..."
+        style="@style/Widget.AppCompat.AutoCompleteTextView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/loginEmail"
+        android:layout_alignEnd="@+id/loginEmail"
+        android:layout_marginTop="20dp"
+        android:id="@+id/loginPassword"
+        android:hint="Password..." />
+
+    <Button
+        android:text="Need an Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mybutton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnNewAccount"
+        android:textColor="@color/cardview_light_background" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/mybutton"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/loginPassword"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/cardview_light_background" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGoogle"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignStart="@+id/btnLogin"
+        android:layout_marginTop="46dp"></com.google.android.gms.common.SignInButton>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.onal.navtest.InfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/info_fragment"
+        android:id="@+id/text_info"
+        android:paddingTop="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textAlignment="textStart" />
+
+</FrameLayout>
